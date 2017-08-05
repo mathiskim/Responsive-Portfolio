@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+/*    width: 1096px;  */
+    width: 1096px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 0px;
+    margin-top: 0px;
+    border: 5px solid yellow;
+}
+h1, h2, h3 {
+    font-family: "Georgia", Times, 'Times New Roman', serif;
+}
+a {
+  text-decoration: none;
+  text-align: right;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    list-style-type: none;
+    border: 3px solid #ccc; 
+    margin: 0px;    
+    height: 30%;
+}
+
+/* Style the links inside the navigation bar */
+ .topnav a {
+    float: right;
+    display: block;
+    color: #777;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    size: 33%;
+} 
+
+/*.topsection { 
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;     
+}  */
+
+#left { float: right;
+  background: #fff;    
+    width: 10%;    
+  margin-bottom: 20px;     
+}
+
+#myname { float: right;  
+  color: white;
+  background: #4aaaa5;
+  width: 30%;
+  text-align: center;
+  
+}
+
+#about {float: right;  
+    color: white;
+    background: #fff;
+    width: 20%;
+    padding: 20px;    
+  margin-bottom: 20px;
+  text-align: right;
+
+}
+#portfolio {float: right;  
+    color: white;
+    background: #fff;
+    width: 20%;
+    padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+#contact {float: right;  
+    color: white;
+    background: #fff;
+    width: 20%;
+    padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+ .li a { 
+    float: left; 
+    font-family: "Georgia", Times, 'Times New Roman', serif;
+    font-size: 24px;
+    color: #fff;    
+    background: #4aaaa5;
+    margin-left: 45px;
+
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+hr {
+  background:  #cccccc;  
+  height: 2px; 
+}
+.main {
+    width: 100%;
+    overflow: auto;
+    border-left: 5px solid #ccc;
+    border-right: 5px solid #ccc;
+    border-bottom: 5px solid #4aaaa5;
+    height: 100%;
+}
+
+.aboutme {
+    float: left;
+    background: #fff;
+    color: #4aaaa5;
+    width: 60%;
+    margin-left: 75px;    
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px;
+}
+.aboutme p {
+    color: #777;
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+    margin-right: 12px;
+}
+.form {
+	color: black;
+}
+input[type=text] {
+	color: #777;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+	width: 10%;
+    cursor: pointer;
+
+}	
+textarea {
+	width: 100%;
+	resize: none;
+	padding: 12px 20px;
+    margin: 10px 0 20px 0;
+}
+.portimages{
+	list-style-type: none;
+}	
+
+.sidebar {  
+  background: #fff;
+  padding: 20px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.sidebar h3{
+  color: #4aaaa5;
+  text-align: center;
+  
+}
+
+.connect {
+text-align: center;
+margin: 5px 0 0 ;
+padding: 5px 0;
+}
+
+.connect img {
+  width:42px;
+  height:42px;
+  border:0;
+}
+
+.connect ul {
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+ .connect li{
+   display: inline-block;
+   padding: 2px 2px;   
+  }
+.clear {
+    clear: both;
+    background: #666;
+    color: #fff;
+    padding: 20px ;
+    text-align: center;
+} 
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+
+@media screen and (max-width: 980px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: darkblue;
+    color: #fff;
+    border: 5px solid black;
+    width: 800px;
+  }
+
+  /* The wrapper's width will be 600px */
+  body {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: green;
+    color: #fff;
+    border: 5px solid green;
+    width: 100px;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: black;
+    color: #fff;
+    border: 5px solid blue;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 500px;
+  }
+}
